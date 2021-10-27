@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Homework</title>
+</head>
+<body>
+    <h3>Create An Account</h3>
+    <form action="process.php">
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label><br>
+            <select name="age" id="age">
+                <option value="oneToTen">1-10</option>
+                <option value="tenToTwenty">10-20</option>
+                <option value="twentyToThirty">20-30</option>
+                <option value="thirtyToFourty">30-40</option>
+                <option value="fourtyToFifty">40-50</option>
+                <option value="fiftyToSixty">50-60</option>
+                <option value="sixtyToSeventy">60-70</option>
+                <option value="seventyToEighty">70-80</option>
+                <option value="eightyToNinety">80-90</option>
+                <option value="ninetyAndPlus">90+</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="message">Tell us a bit about yourself:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="terms" id="terms" required> I agree to the <a href="#" target="_blank">terms of service</a>.
+        </div>
+        <br>
+        <input type="submit" value="Sign up">
+    </form>
+</body>
+</html>

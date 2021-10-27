@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Homework</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #324660;
+        }
+
+        #main {
+            display: inline;
+            text-align: center;
+        }
+
+        #main p {
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .btns {
+            display: inline-flex;
+        } 
+
+        .btns #btn {
+            margin: auto 10px;
+        }
+
+        .btn-1 {
+            border: none;
+            font-size: large;
+            padding: 10px 30px;
+            color: #fff;
+        }
+
+        .btn-2 {
+            border: none;
+            font-size: medium;
+            padding: 7.5px 20px;
+            color: #fff;
+        }
+
+        .btn-3 {
+            border: none;
+            font-size: small;
+            padding: 5px 10px;
+            color: #fff;
+        }
+
+        /* BOX 1 */
+        #box-1 .btn-1 {
+            background: #01DD77;
+        }
+
+        #box-1 .btn-1:hover {
+            cursor: pointer;
+            background: #01aa5c;
+        }
+        
+        #box-1 .btn-2 {
+            background: #FF2427;
+        }
+
+        #box-1 .btn-2:hover {
+            cursor: pointer;
+            background: #f00003;
+        }
+
+        #box-1 .btn-3 {
+            background: #0676C6;
+        }
+
+        #box-1 .btn-3:hover {
+            cursor: pointer;
+            background: #055995;
+        }
+
+        /* BOX 2 */
+        #box-2 .btn-1 {
+            background: #F57902;
+            border-radius: 5px;
+        }
+
+        #box-2 .btn-1:hover {
+            cursor: pointer;
+            background: #c26002;
+        }
+        
+        #box-2 .btn-2 {
+            background: #F3CE03;
+            border-radius: 5px;
+        }
+
+        #box-2 .btn-2:hover {
+            cursor: pointer;
+            background: #c1a302;
+        }
+
+        #box-2 .btn-3 {
+            background: #7E8C8F;
+            border-radius: 5px;
+        }
+
+        #box-2 .btn-3:hover {
+            cursor: pointer;
+            background: #657275;
+        }
+
+        /* BOX 3 */
+        #box-3 .btn-1 {
+            background: #324660;
+            border: 1px solid #01aa5c;
+        }
+
+        #box-3 .btn-1:hover {
+            cursor: pointer;
+            border: 1px solid #01DD77;
+            background: #01DD77;
+        }
+        
+        #box-3 .btn-2 {
+            background: #324660;
+            border: 1px solid #f00003;
+        }
+
+        #box-3 .btn-2:hover {
+            cursor: pointer;
+            border: 1px solid #FF2427;
+            background: #FF2427;
+        }
+
+        #box-3 .btn-3 {
+            background: #324660;
+            border: 1px solid #055995;
+        }
+
+        #box-3 .btn-3:hover {
+            cursor: pointer;
+            border: 1px solid #0676C6;
+            background: #0676C6;
+        }
+
+        /* BOX 4 */
+        #box-4 .btn-1 {
+            background: #324660;
+            border: 1px solid #c26002;
+            border-radius: 5px;
+        }
+
+        #box-4 .btn-1:hover {
+            cursor: pointer;
+            border: 1px solid #F57902;
+            background: #F57902;
+        }
+        
+        #box-4 .btn-2 {
+            background: #324660;
+            border: 1px solid #c1a302;
+            border-radius: 5px;
+        }
+
+        #box-4 .btn-2:hover {
+            cursor: pointer;
+            border: 1px solid #F3CE03;
+            background: #F3CE03;
+        }
+
+        #box-4 .btn-3 {
+            background: #324660;
+            border: 1px solid #657275;
+            border-radius: 5px;
+        }
+
+        #box-4 .btn-3:hover {
+            cursor: pointer;
+            border: 1px solid #7E8C8F;
+            background: #7E8C8F;
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <div id="box-1">
+            <div class="txt">
+                <p>Flat</p>
+            </div>
+            <div class="btns">
+                <div id="btn">
+                    <button class="btn-1">Register</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-2">Clear</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-3">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div id="box-2">
+            <div class="txt">
+                <p>Round</p>
+            </div>
+            <div class="btns">
+                <div id="btn">
+                    <button class="btn-1">Register</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-2">Clear</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-3">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div id="box-3">
+            <div class="txt">
+                <p>Flat Ghost</p>
+            </div>
+            <div class="btns">
+                <div id="btn">
+                    <button class="btn-1">Register</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-2">Clear</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-3">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div id="box-4">
+            <div class="txt">
+                <p>Round Ghost</p>
+            </div>
+            <div class="btns">
+                <div id="btn">
+                    <button class="btn-1">Register</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-2">Clear</button>
+                </div>
+                <div id="btn">
+                    <button class="btn-3">Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

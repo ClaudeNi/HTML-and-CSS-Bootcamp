@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Side Homework</title>
+    <style>
+        * {
+            box-sizing: border-box;   
+        }
+    
+        .container {
+            max-width: 960px;
+            margin: auto auto;
+            padding: auto auto;
+        }
+    
+        .clr {
+            clear: both;
+        }
+    
+        .box {
+            background: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+    
+        .box h3 {
+            text-align: center;
+        }
+    
+        #box-1 {
+            background: #ffbf0f;
+            border: 1px solid #333;
+        }
+    
+        #box-2 {
+            float: left;
+            width: 30%;
+            background: #1fa70d;
+            border: 1px solid #333;
+        }
+    
+        #box-2 h3 {
+            text-align: left;
+        }
+    
+        #box-3 {
+            float: right;
+            width: 69%;
+            background: #c21ae4;
+            border: 1px solid #333;
+        }
+    
+        #box-3 h3 {
+            text-align: right;
+        }
+    
+        #box-4 {
+            background: #5c74ff;
+            border: 1px solid #333;
+        }
+
+        @media(max-width: 768px) {
+            #box-2 {
+                display: none;
+            }
+
+            #box-3 {
+                float: none;
+                width: 100%;
+            }
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Header</h3>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Side</h3>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Main</h3>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</body>
+</html>

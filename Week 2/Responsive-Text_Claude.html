@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Text Homework</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        /* Mobile */
+        @media(max-width: 500px) {
+            .title, .txt {
+                font-size: 20px;
+            }
+        }
+
+        /* Tablet */
+        @media(min-width: 501px) and (max-width: 768px) {
+            .title, .txt {
+                font-size: 40px;
+            }
+        }
+
+        /* Normal */
+        @media(min-width: 769px) and (max-width: 1200px) {
+            .title, .txt {
+                font-size: 60px;
+            }
+        }
+
+        /* Widescreen */
+        @media(min-width: 1201px) {
+            .title, .txt {
+                font-size: 80px;
+            }
+        }
+
+        /* Landscape */
+        @media(max-height: 500px) {
+            .title, .txt {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title">Title</h2>
+    <p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, ducimus? Mollitia aperiam itaque numquam molestias accusamus rem. Fugit vitae iste voluptatum cum quisquam, laboriosam, est officia harum aspernatur ea aut!</p>
+</body>
+</html>

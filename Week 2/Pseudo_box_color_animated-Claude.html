@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo box color animated Homework</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            background: red;
+            position: relative;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background: purple;
+        }
+
+        .box:hover::before {
+            content: '';
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

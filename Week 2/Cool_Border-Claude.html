@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Border Homework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 10rem;
+            position: relative;
+            background: #000;
+            border: 1px solid #fff;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border: 1px solid #000;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Cool Border
+    </div>
+</body>
+</html>

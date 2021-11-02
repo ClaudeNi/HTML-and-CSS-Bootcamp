@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Animation Homework</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: yellow;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        .box {
+            padding: 1px 2rem;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: black;
+            transform: scale(0);
+            transform-origin: left;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: black;
+            transform: scale(0);
+            transform-origin: right;
+            bottom: 0;
+            right: 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box:hover::before, .box:hover::after {
+            content: '';
+            transform: scale(1);
+        }
+    </Style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="box box-1">Home</div>
+        <div class="box box-2">About</div>
+        <div class="box box-3">Services</div>
+        <div class="box box-4">Portfolio</div>
+        <div class="box box-4">Contact</div>
+    </div>
+</body>
+</html>
